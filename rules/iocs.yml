@@ -1,0 +1,35 @@
+# iocs.yml
+iocs:
+  known_ips:
+    - "192.168.1.1"
+    - "10.0.0.2"
+    - "203.0.113.5"
+  
+  known_urls:
+    - "http://malicioussite.com"
+    - "https://suspicious-domain.org"
+  
+  known_hashes:
+    - "f5d3d47d507f0ac1257d03c970f1b104"
+    - "9a0e5f95b23b8e7d64fe01325a63d8b2"
+  
+  suspicious_patterns:
+    - "XOR encrypted data"
+    - "base64 encoded"
+    - "powershell -nop -w hidden"
+  
+  malware_samples:
+    AgentTesla:
+      hashes:
+        - "f5d3d47d507f0ac1257d03c970f1b104"
+      urls:
+        - "http://maliciousagent.com"
+      ips:
+        - "192.168.1.1"
+    Remcos:
+      hashes:
+        - "9a0e5f95b23b8e7d64fe01325a63d8b2"
+      urls:
+        - "https://remcos-malicious.com"
+      ips:
+        - "203.0.113.5"

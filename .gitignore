@@ -1,0 +1,74 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# mypy
+.mypy_cache/
+
+# Pylint
+.pylint.d/
+
+# Coverage reports
+.coverage
+.coverage.*
+*.cover
+*.py,cover
+
+# Test result files
+nosetests.xml
+coverage.xml
+*.coveragerc
+*.tox
+*.nox
+*.hypothesis
+*.pytest_cache
+
+# Distribution / Packaging
+*.egg
+*.egg-info
+dist/
+build/
+eggs/
+parts/
+sdist/
+var/
+
+# PyInstaller
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# dotenv environment variables file
+.env
+
+# Flask instance folder
+instance/
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# VS Code specific
+.vscode/
+
+# macOS specific
+.DS_Store

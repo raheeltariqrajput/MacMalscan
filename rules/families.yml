@@ -1,0 +1,49 @@
+# families.yml
+families:
+  AgentTesla:
+    description: "AgentTesla is an infostealer that primarily targets information from web browsers and emails."
+    indicators:
+      - "keylogging"
+      - "downloader"
+      - "http://"
+    behaviors:
+      - "Persistence"
+      - "Keylogging"
+      - "Downloader"
+  
+  FormBook:
+    description: "FormBook is an information stealer that focuses on harvesting login credentials from web browsers."
+    indicators:
+      - "Base64"
+      - "https://"
+    behaviors:
+      - "Downloader"
+      - "Persistence"
+  
+  Remcos:
+    description: "Remcos is a remote access Trojan (RAT) that provides backdoor access to infected systems."
+    indicators:
+      - "mach_vm_protect"
+      - "CreateRemoteThread"
+    behaviors:
+      - "Persistence"
+      - "Keylogging"
+      - "Remote Access"
+  
+  Emotet:
+    description: "Emotet is a well-known malware family that is primarily used for distributing other forms of malware."
+    indicators:
+      - "task_for_pid"
+    behaviors:
+      - "Downloader"
+      - "Persistence"
+      - "Obfuscation"
+
+  LockBit:
+    description: "LockBit is a ransomware family that encrypts user files and demands cryptocurrency for decryption."
+    indicators:
+      - "encrypt"
+      - "decrypt"
+      - "bitcoin"
+    behaviors:
+      - "Ransomware"
